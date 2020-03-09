@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContentModule.sass';
-import {Route, Switch, BrowserRouter} from 'react-router-dom'
+import {Route, Switch, withRouter} from 'react-router-dom'
 
 const about = () => { 
     return (
@@ -48,15 +48,14 @@ const contact = () => {
 
 const ContentModule = () => (
     <section class="mainContent">
-    <BrowserRouter>
     <Switch>
+        <Route exact path='/' component={about}></Route>
         <Route path='/about' component={about}></Route>
         <Route path='/technologies' component={technologies}></Route>
         <Route path='/projects' component={projects}></Route>
         <Route path='/contact' component={contact}></Route>
     </Switch>
-    </BrowserRouter>
     </section>
 )
 
-export default ContentModule
+export default withRouter(ContentModule)
