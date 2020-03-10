@@ -2,14 +2,14 @@ import React from 'react';
 import './AsideModule.sass';
 import {NavLink, withRouter} from 'react-router-dom'
 
-
-const AsideModule = () => (
+const AsideModule = (props) => 
+    (
     <nav>
         <ul>
-            <NavLink to='/about'><li><i className="icon-user"/> O MNIE</li></NavLink>
-            <NavLink to='/technologies'><li><i className="icon-cog-alt"/> TECHNOLOGIE</li></NavLink>
-            <NavLink to='/projects'><li><i className="icon-picture"/> PROJEKTY</li></NavLink>
-            <NavLink to='/contact'><li><i className="icon-mail-alt"/> KONTAKT</li></NavLink>
+            <NavLink to='/about'><li><i className="icon-user"/> {props.txt.about}</li></NavLink>
+            <NavLink to='/technologies'><li><i className="icon-cog-alt"/> {props.txt.tech}</li></NavLink>
+            <NavLink to='/projects'><li><i className="icon-picture"/> {props.txt.proj}</li></NavLink>
+            <NavLink to='/contact'><li><i className="icon-mail-alt"/> {props.txt.cont}</li></NavLink>
         </ul>
     </nav>
 )

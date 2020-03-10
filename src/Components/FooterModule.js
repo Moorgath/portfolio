@@ -8,7 +8,7 @@ const classToggle = () => {
 setInterval(classToggle,500)
 
 const FooterModule = () => (
-    <footer>&copy; Copyright 2020, Wojciech Fydrych<span id="foot" class="fontcolor">_</span></footer>
+    <footer>&copy; Copyright 2020, Wojciech Fydrych<span id="foot" className="fontcolor">_</span></footer>
 )
 
 export default FooterModule

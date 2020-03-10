@@ -3,10 +3,10 @@ import './MainModule.sass';
 import ContentModule from './ContentModule'
 import AsideModule from './AsideModule'
 
-const MainModule = () => (
+const MainModule = (props) => (
     <main>
         <ContentModule></ContentModule>
-        <AsideModule></AsideModule>
+        <AsideModule txt={props.txt}></AsideModule>
     </main>
 )
 

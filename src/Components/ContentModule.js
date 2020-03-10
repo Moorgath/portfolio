@@ -47,7 +47,7 @@ const contact = () => {
 )}
 
 const ContentModule = () => (
-    <section class="mainContent">
+    <section className="mainContent">
     <Switch>
         <Route exact path='/' component={about}></Route>
         <Route path='/about' component={about}></Route>
