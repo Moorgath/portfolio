@@ -1,8 +1,28 @@
-nav
-    box-sizing: border-box
-    flex-grow: 1
-    width: 30%
-    text-align: center
+@media (max-width: 800px)
+    .navComp
+        display: none
+
+    .navMobile
+        display: flex
+        min-width: 100vw
+        justify-content: center
+        margin-top: 20px
+        order: 0
+    
+    i
+        font-size: 5vh
+        margin-left: 5vw
+        margin-right: 5vw
+        
+@media (min-width: 801px)
+    nav.navComp
+        box-sizing: border-box
+        flex-grow: 1
+        width: 30%
+        text-align: center
+
+    nav.navMobile
+        display: none
 
 li
     list-style-type: none

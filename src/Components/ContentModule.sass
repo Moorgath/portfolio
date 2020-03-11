@@ -1,7 +1,19 @@
-.mainContent
-    box-sizing: border-box
-    flex-grow: 2
-    padding: 30px
-    width: 70%
-    height: auto
-    border-right: 1px solid rgb(50,50,50)
+@media (max-width: 800px)
+    .mainContent
+        display: block
+        order: 1
+        width: 90vw
+        top: 35vh
+        position: absolute
+        margin-left: 5vw
+        margin-right: 5vw
+        
+    
+@media (min-width: 801px)
+    .mainContent
+        box-sizing: border-box
+        flex-grow: 2
+        padding: 30px
+        width: 70%
+        height: auto
+        border-right: 1px solid rgb(50,50,50)
