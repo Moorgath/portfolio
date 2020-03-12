@@ -3,11 +3,16 @@
         display: none
 
     .navMobile
+        position: fixed
+        z-index: 3
+        margin-top: 20vh
+        padding-top: 2vh
+        padding-bottom: 3vh
         display: flex
         min-width: 100vw
         justify-content: center
-        margin-top: 20px
         order: 0
+        background-color: rgb(40,40,40)
     
     i
         font-size: 5vh
@@ -18,8 +23,13 @@
     nav.navComp
         box-sizing: border-box
         flex-grow: 1
-        width: 30%
+        width: 30vw
         text-align: center
+        margin-top: 20vh
+        position: fixed
+        right: 0
+        background-color: rgb(40,40,40)
+        z-index: 3
 
     nav.navMobile
         display: none

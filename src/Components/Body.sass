@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap')
   
+body
+  background-color: rgb(40,40,40)
+
 div
   margin: 0
-  height: 100vh
+  min-height: 100vh
   width: 100vw
   overflow: hidden
   background-color: rgb(40,40,40)
@@ -18,12 +21,24 @@ img:hover
   cursor: pointer
   transform: translateY(2px)
 
-.languages
-  margin-top: 5px
-  margin-right: 0
-  height: 20px
-  width: 80px
-  position: absolute
-  top: 0
-  right: 0
-  background-color: rgb(40,40,40)
+@media (min-width: 801px)
+  .languages
+      width: 80px
+      margin-top: 5px
+      margin-right: 5px
+      max-height: 10vh
+      position: fixed
+      top: 0
+      right: 0
+      z-index: 2
+
+@media (max-width: 800px)
+    .languages
+      width: 25px
+      margin-top: 5px
+      margin-right: 5px
+      max-height: 10vh
+      position: fixed
+      top: 0
+      right: 0
+      z-index: 2
