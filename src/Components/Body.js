@@ -58,11 +58,11 @@ class Body extends Component {
     <React.Fragment>
       <BrowserRouter>
         <HeaderModule></HeaderModule>
-        <div className="languages">
+        <span className="languages">
           <img onClick={this.handleLangClick.bind(this)} src={PL} alt="PL" />
           <img onClick={this.handleLangClick.bind(this)} src={EN} alt="EN" />
           <img onClick={this.handleLangClick.bind(this)} src={DE} alt="DE" />
-        </div>
+        </span>
         <MainModule txt={this.txt}></MainModule>
         <FooterModule></FooterModule>
       </BrowserRouter>
