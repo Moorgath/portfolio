@@ -1,0 +1,67 @@
+.tech
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    margin: 0
+    justify-content: space-around
+
+.tech img
+    margin: 5%
+    padding: 0
+    max-height: 100px
+    max-width: 100px
+
+.TechInfo img
+    padding: 10px
+
+@media (max-width: 800px)
+    .TechInfo
+        position: fixed
+        display: block
+        box-sizing: border-box
+        top: 10vh
+        left: 30vw
+        height: 20vh
+        width: 40vw
+        background-color: rgb(30,30,30)
+        z-index: 10
+        border-radius: 50px
+        text-align: center
+        padding: 20px
+        border: 1px solid white
+        box-shadow: 10px 10px 20px rgb(50,50,50)
+
+    .techZero
+        position: fixed
+        height: 0
+        width: 0
+        top: 10vh
+        left: 50vw
+        transition: .3s
+        z-index: 10
+
+@media (min-width: 801px)
+    .TechInfo
+        position: fixed
+        display: block
+        box-sizing: border-box
+        top: 70vh
+        left: 75vw
+        height: 20vh
+        width: 20vw
+        background-color: rgb(30,30,30)
+        z-index: 10
+        border-radius: 50px
+        text-align: center
+        padding: 20px
+        border: 1px solid white
+        box-shadow: 10px 10px 20px rgb(50,50,50)
+        transition: .4s
+
+    .techZero
+        position: fixed
+        height: 0
+        width: 0
+        top: 70vh
+        left: 75vw
+        transition: .3s
