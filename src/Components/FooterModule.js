@@ -1,5 +1,5 @@
-import React from 'react';
-import './FooterModule.sass';
+import React from 'react'
+import './FooterModule.sass'
 
 const classToggle = () => {
     document.querySelector('#foot').classList.toggle('fontcolor')

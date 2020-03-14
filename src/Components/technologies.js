@@ -1,5 +1,5 @@
-import React from 'react';
-import './technologies.sass';
+import React from 'react'
+import './technologies.sass'
 import html5 from './icons/html.png'
 import css3 from './icons/css3.png'
 import sass from './icons/sass.png'
@@ -14,6 +14,13 @@ import s2 from './icons/2.png'
 import s3 from './icons/3.png'
 import s4 from './icons/4.png'
 import s5 from './icons/5.png'
+
+const spanStyle = {
+    'font-size': '0.7em',
+    'display': 'block',
+    'width': '100%',
+    'text-align': 'center',
+}
 
 const handleHover = e => {
     console.log(e.target)
@@ -116,6 +123,7 @@ const technologies = () => {
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={git} alt='git'/>
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={figma} alt='figma'/>
     </div>
+    <span style={spanStyle}>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span> 
     </React.Fragment>
 )}
 

@@ -1,5 +1,5 @@
-import React from 'react';
-import './AsideModule.sass';
+import React from 'react'
+import './AsideModule.sass'
 import {NavLink, withRouter} from 'react-router-dom'
 
 const AsideModule = (props) => 

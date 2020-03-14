@@ -1,5 +1,5 @@
-import React from 'react';
-import './HeaderModule.sass';
+import React from 'react'
+import './HeaderModule.sass'
 
 const HeaderModule = () => (
     <header>

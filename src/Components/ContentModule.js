@@ -1,6 +1,7 @@
-import React from 'react';
+import React from 'react'
 import technologies from'./technologies'
-import './ContentModule.sass';
+import contact from'./contact'
+import './ContentModule.sass'
 import {Route, Switch, withRouter} from 'react-router-dom'
 
 const about = () => { 
@@ -21,16 +22,6 @@ const projects = () => {
     <h3>PROJECTS</h3>
     <span>
         Portfolio, strona o bananie
-    </span>
-    </React.Fragment>
-)}
-
-const contact = () => { 
-    return (
-    <React.Fragment>
-    <h3>CONTACT</h3>
-    <span>
-        LinkedIn, telefon szwajcarski
     </span>
     </React.Fragment>
 )}

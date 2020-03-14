@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import HeaderModule from './HeaderModule'
 import MainModule from './MainModule'
 import FooterModule from './FooterModule'
@@ -7,7 +7,7 @@ import './Body.sass';
 import PL from './flags/PL-flag.gif'
 import EN from './flags/UK-flag.gif'
 import DE from './flags/GM-flag.gif'
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom'
 
 class Body extends Component {
   state = {
