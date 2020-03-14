@@ -9,6 +9,18 @@ import EN from './flags/UK-flag.gif'
 import DE from './flags/GM-flag.gif'
 import { BrowserRouter } from 'react-router-dom'
 
+const Languages = (props) => {
+  return (
+  <React.Fragment>
+    <span className="languages">
+    <img onClick={props.handleClick} src={PL} alt="PL" />
+    <img onClick={props.handleClick} src={EN} alt="EN" />
+    <img onClick={props.handleClick} src={DE} alt="DE" />
+  </span>
+  </React.Fragment>
+  )
+}
+
 class Body extends Component {
   state = {
     lang: 'EN',
@@ -23,6 +35,7 @@ class Body extends Component {
         this.txt.tech = 'TECHNOLOGIES'
         this.txt.proj = 'PROJECTS'
         this.txt.cont = 'CONTACT'
+        this.txt.lang = 'en'
     }
 
     else if (lang === 'PL')
@@ -31,6 +44,7 @@ class Body extends Component {
         this.txt.tech = 'TECHNOLOGIE'
         this.txt.proj = 'PROJEKTY'
         this.txt.cont = 'KONTAKT'
+        this.txt.lang = 'pl'
     }
 
     else if (lang === 'DE')
@@ -39,6 +53,7 @@ class Body extends Component {
         this.txt.tech = 'TECHNOLOGIEN'
         this.txt.proj = 'PROJEKTE'
         this.txt.cont = 'KONTAKT'
+        this.txt.lang = 'de'
     }
   }
 
@@ -58,11 +73,7 @@ class Body extends Component {
     <React.Fragment>
       <BrowserRouter>
         <HeaderModule></HeaderModule>
-        <span className="languages">
-          <img onClick={this.handleLangClick.bind(this)} src={PL} alt="PL" />
-          <img onClick={this.handleLangClick.bind(this)} src={EN} alt="EN" />
-          <img onClick={this.handleLangClick.bind(this)} src={DE} alt="DE" />
-        </span>
+        <Languages handleClick={this.handleLangClick.bind(this)}></Languages>
         <MainModule txt={this.txt}></MainModule>
         <FooterModule></FooterModule>
       </BrowserRouter>

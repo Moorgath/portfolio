@@ -6,29 +6,28 @@ import linkedin from './icons/linkedin.png'
 import whatsapp from './icons/whatsapp.png'
 import github from './icons/github.png'
 
-const spanStyle = {
-    'font-size': '0.7em',
-    'display': 'block',
-    'width': '100%',
-    'text-align': 'center',
-}
+let header = ''
 
-const contact = () => { 
+const contact = (props) => { 
+    if (props.lang === 'en') header = 'Contact'
+    else if (props.lang === 'pl') header = 'Kontakt'
+    else if (props.lang === 'de') header = 'Kontakt'
+
     return (
     <React.Fragment>
-    <h3>CONTACT</h3>
+    <h3>{header}</h3>
     <div className='contact'>
         <span className='cell'>
-            <img src={email} alt='email' /> <span className='text'><a href="mailto:wfydrych@gmail.com">wfydrych@gmail.com</a> </span>
+            <a href="mailto:wfydrych@gmail.com"><img src={email} alt='email' /> <span className='text'>wfydrych@gmail.com </span></a>
         </span>
         <span className='cell'>
-            <img src={linkedin} alt='linkedin' /> <span className='text'><a target="_blank" href="https://www.linkedin.com/in/wojciech-fydrych-26153919a/">Wojciech Fydrych</a></span>
+            <a target="_blank" href="https://www.linkedin.com/in/wojciech-fydrych-26153919a/"><img src={linkedin} alt='linkedin' /> <span className='text'>Wojciech Fydrych</span></a>
         </span>
         <span className='cell'>
             <img src={whatsapp} alt='whatsapp' /> <span className='text'>+41779542330</span>
         </span>
         <span className='cell'>
-            <img src={github} alt='github' /> <span className='text'><a target="_blank" href="https://github.com/wfydrych">wfydrych</a></span>
+            <a target="_blank" href="https://github.com/wfydrych"><img src={github} alt='github' /> <span className='text'>wfydrych</span></a>
         </span>
         <span className='cell'>
             <img src={mobile} alt='mobile' /> <span className='text'>+48791240333</span>
@@ -37,7 +36,7 @@ const contact = () => {
             <img src={mobile} alt='mobile' /> <span className='text'>+41779542330</span>
         </span>
     </div>
-    <span style={spanStyle}>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span>
+    <span className='spanStyle'>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span>
     </React.Fragment>
 )}
 

@@ -15,12 +15,7 @@ import s3 from './icons/3.png'
 import s4 from './icons/4.png'
 import s5 from './icons/5.png'
 
-const spanStyle = {
-    'font-size': '0.7em',
-    'display': 'block',
-    'width': '100%',
-    'text-align': 'center',
-}
+let header = ''
 
 const handleHover = e => {
     console.log(e.target)
@@ -107,10 +102,14 @@ const handleDel = e => {
     div.innerHTML = ''
 }
 
-const technologies = () => { 
+const technologies = (props) => { 
+    if (props.lang === 'en') header = 'Technologies'
+    else if (props.lang === 'pl') header = 'Technologie'
+    else if (props.lang === 'de') header = 'Technologien'
+
     return (
     <React.Fragment>
-    <h3>TECHNOLOGIES</h3>
+    <h3>{header}</h3>
     <span className="techZero"></span>
     <div className='tech'>
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={html5} alt='html5'/>
@@ -123,7 +122,7 @@ const technologies = () => {
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={git} alt='git'/>
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={figma} alt='figma'/>
     </div>
-    <span style={spanStyle}>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span> 
+    <span className='spanStyle'>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span> 
     </React.Fragment>
 )}
 

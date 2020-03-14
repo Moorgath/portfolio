@@ -1,39 +1,34 @@
 import React from 'react'
-import technologies from'./technologies'
-import contact from'./contact'
+import Technologies from'./technologies'
+import Projects from'./projects'
+import About from'./about'
+import Contact from'./contact'
 import './ContentModule.sass'
 import {Route, Switch, withRouter} from 'react-router-dom'
 
-const about = () => { 
-    return (
-    <React.Fragment>
-    <h3>Welcome on my page!</h3>
-    <span>
-        I am a junior web-developer, starting my journey with IT.
-        On my page you will find projects which I've already done, and also technologies which I know so far.
-        In case you would see me in my team, feel free to contact.
-    </span>
-    </React.Fragment>
-)}
-
-const projects = () => { 
-    return (
-    <React.Fragment>
-    <h3>PROJECTS</h3>
-    <span>
-        Portfolio, strona o bananie
-    </span>
-    </React.Fragment>
-)}
-
-const ContentModule = () => (
+const ContentModule = (props) => (
     <section className="mainContent">
     <Switch>
-        <Route exact path='/' component={about}></Route>
-        <Route path='/about' component={about}></Route>
-        <Route path='/technologies' component={technologies}></Route>
-        <Route path='/projects' component={projects}></Route>
-        <Route path='/contact' component={contact}></Route>
+        <Route 
+            exact path='/' 
+            render = {text => <About lang={props.lang}></About>}>
+        </Route>
+        <Route 
+            path='/about' 
+            render = {text => <About lang={props.lang}></About>}>
+        </Route>
+        <Route 
+            path='/technologies' 
+            render = {text => <Technologies lang={props.lang}></Technologies>}>
+        </Route>
+        <Route 
+            path='/projects' 
+            render = {text => <Projects lang={props.lang}></Projects>}>
+        </Route>
+        <Route 
+            path='/contact' 
+            render = {text => <Contact lang={props.lang}></Contact>}>
+        </Route>
     </Switch>
     </section>
 )
