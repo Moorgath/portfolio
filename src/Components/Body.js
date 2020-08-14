@@ -1,9 +1,7 @@
 import React, {Component} from 'react'
-import HeaderModule from './HeaderModule'
 import MainModule from './MainModule'
-import FooterModule from './FooterModule'
 import "./fontello/css/fontello.css"
-import './Body.sass';
+import './Body.sass'
 import PL from './flags/PL-flag.gif'
 import EN from './flags/UK-flag.gif'
 import DE from './flags/GM-flag.gif'
@@ -72,10 +70,8 @@ class Body extends Component {
   return (
     <React.Fragment>
       <BrowserRouter>
-        <HeaderModule></HeaderModule>
         <Languages handleClick={this.handleLangClick.bind(this)}></Languages>
         <MainModule txt={this.txt}></MainModule>
-        <FooterModule></FooterModule>
       </BrowserRouter>
     </React.Fragment>
   );

@@ -121,8 +121,8 @@ const technologies = (props) => {
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={nodejs} alt='nodejs'/>
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={git} alt='git'/>
         <img onMouseOut={handleDel} onMouseOver={handleHover} src={figma} alt='figma'/>
+        <span className='spanStyle'>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span> 
     </div>
-    <span className='spanStyle'>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span> 
     </React.Fragment>
 )}
 

@@ -14,11 +14,19 @@
 .spanStyle
     font-size: 0.7em
     display: block
-    width: 100%
     text-align: center
+    width: 100%
+    margin: 0
+    padding: 0
+    color: black
+
+.spanStyle a
+    color: black
 
 .TechInfo img
     padding: 10px
+    height: auto
+    width: 40%
 
 @media (max-width: 800px)
     .TechInfo
@@ -29,13 +37,14 @@
         left: 30vw
         height: 20vh
         width: 40vw
-        background-color: rgb(30,30,30)
+        background-color: white
         z-index: 10
         border-radius: 50px
         text-align: center
         padding: 20px
         border: 1px solid white
         box-shadow: 10px 10px 20px rgb(50,50,50)
+        color: black
 
     .techZero
         position: fixed
@@ -52,16 +61,17 @@
         display: block
         box-sizing: border-box
         top: 70vh
-        left: 75vw
+        left: 5vw
         height: 20vh
         width: 20vw
-        background-color: rgb(30,30,30)
+        background-color: rgb(40, 40, 40)
         z-index: 10
         border-radius: 50px
         text-align: center
         padding: 20px
         border: 1px solid white
         box-shadow: 10px 10px 20px rgb(50,50,50)
+        color: white
         transition: .4s
 
     .techZero
@@ -69,5 +79,5 @@
         height: 0
         width: 0
         top: 70vh
-        left: 75vw
+        left: 5vw
         transition: .3s

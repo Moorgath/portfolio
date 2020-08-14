@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.sass'
+import laptop from './icons/laptop.png'
 
 let header = ''
 let text = ''
@@ -23,17 +24,21 @@ const about = (props) => {
     }
     else if (props.lang === 'de') {
         header='Willkommen auf meiner Seite!'
-        text = ` `
+        text = `Ich bin Junior Web-Entwickler und starte meine Karriere mit dem Programmieren.
+        Auf dieser Website finden Sie meine neuesten Projekte und Technologien, die ich benutze.
+        Jeden Tag lerne ich etwas Neues und gerade konzentiere ich mich auf Back-End Technologien.
+        Wenn Sie sich mich als Teil Ihres Teams vorstellen können oder anderweitig einen Auftrag für mich haben, melden Sie sich gerne bei mir. Ich freue mich auf Ihre Nachricht :) `
     }
 
 
 
     return (
     <React.Fragment>
-    <h3>{header}</h3>
-    <span>
-         {text}
-    </span>
+        <h3>{header}</h3>
+        <span className='about__text'>
+            <img className='about__laptop' src={laptop} alt='laptop' />
+            <span className='about__innertxt'>{text}</span>
+        </span>
     </React.Fragment>
 )}
 

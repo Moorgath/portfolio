@@ -5,8 +5,8 @@ import AsideModule from './AsideModule'
 
 const MainModule = (props) => (
     <main>
-        <ContentModule lang={props.txt.lang}></ContentModule>
         <AsideModule txt={props.txt}></AsideModule>
+        <ContentModule lang={props.txt.lang}></ContentModule>
     </main>
 )
 

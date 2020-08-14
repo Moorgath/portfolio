@@ -1,7 +1,7 @@
 footer
     position: fixed
     height: 10vh
-    width: 100vw
+    width: 30vw
     margin: 0
     text-align: center
     line-height: 10vh
@@ -9,11 +9,23 @@ footer
     left: 0
     font-family: 'Chakra Petch', sans-serif
     z-index: 2
-    background-color: rgb(40,40,40)
 
 span
-    color: white
     transition: .1s
 
 span.fontcolor
-    color: rgb(40,40,40)
+    color: rgb(40, 40, 40)
+
+@media (max-width: 800px)
+    footer
+        width: 100vw
+        background-color: white
+
+@media (min-width: 801px)
+
+    span
+        color: white
+
+    footer
+        background-color: rgb(40, 40, 40)
+        color: white

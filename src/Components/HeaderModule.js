@@ -1,10 +1,10 @@
 import React from 'react'
 import './HeaderModule.sass'
+import logo from './icons/logo.png'
 
 const HeaderModule = () => (
     <header>
-        <h1>Wojciech Fydrych</h1>
-        <h3>Junior Web-Developer</h3>
+        <img src={logo} alt='logo' class='logo'/>
     </header>
 )
 

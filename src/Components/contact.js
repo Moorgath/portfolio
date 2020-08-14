@@ -35,8 +35,8 @@ const contact = (props) => {
         <span className='cell'>
             <img src={mobile} alt='mobile' /> <span className='text'>+41779542330</span>
         </span>
+        <span className='spanStyle'>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span>
     </div>
-    <span className='spanStyle'>All icons downloaded from <a target="_blank" href="https://icons8.com/">Icons8.com</a></span>
     </React.Fragment>
 )}
 

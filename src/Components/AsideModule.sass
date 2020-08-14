@@ -5,19 +5,38 @@
     .navMobile
         position: fixed
         z-index: 3
-        margin-top: 20vh
+        margin-top: 25vh
         padding-top: 2vh
         padding-bottom: 3vh
         display: flex
         min-width: 100vw
         justify-content: center
         order: 0
-        background-color: rgb(40,40,40)
+        background-color: white
     
     i
         font-size: 5vh
         margin-left: 5vw
         margin-right: 5vw
+
+    li
+        list-style-type: none
+        margin-right: 30px
+        padding: 5px
+        margin-top: 5vh
+        border-bottom: 2px solid rgb(25,25,25)
+        transition: .3s
+        font-family: 'Chakra Petch', sans-serif
+        transform: translateY(2px)
+
+    a
+        color: rgb(40, 40, 40)
+        text-decoration: none
+
+li:hover
+    border-bottom: 2px solid rgb(150,150,150)
+    cursor: pointer
+    transform: translateY(-2px)
         
 @media (min-width: 801px)
     nav.navComp
@@ -25,30 +44,31 @@
         flex-grow: 1
         width: 30vw
         text-align: center
-        margin-top: 20vh
+        margin-top: 25vh
         position: fixed
-        right: 0
-        background-color: rgb(40,40,40)
+        left: 0
+        background-color: rgb(40, 40, 40)
         z-index: 3
+        height: 65vh
 
     nav.navMobile
         display: none
 
-li
-    list-style-type: none
-    margin-right: 30px
-    padding: 5px
-    margin-top: 5vh
-    border-bottom: 2px solid rgb(25,25,25)
-    transition: .3s
-    font-family: 'Chakra Petch', sans-serif
-    transform: translateY(2px)
+    li
+        list-style-type: none
+        margin-right: 30px
+        padding: 5px
+        margin-top: 5vh
+        border-bottom: 2px solid white
+        transition: .3s
+        font-family: 'Chakra Petch', sans-serif
+        transform: translateY(2px)
 
-a
-    color: rgb(200,200,200)
-    text-decoration: none
+    a
+        color: white
+        text-decoration: none
 
-li:hover
-    border-bottom: 2px solid rgb(150,150,150)
-    cursor: pointer
-    transform: translateY(-2px)
+    li:hover
+        border-bottom: 2px solid rgb(150,150,150)
+        cursor: pointer
+        transform: translateY(-2px)
